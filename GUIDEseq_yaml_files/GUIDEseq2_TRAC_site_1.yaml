@@ -1,0 +1,875 @@
+reference_genome: /research_jude/rgs01_jude/groups/tsaigrp/projects/Genomics/common/genomes/hg38/hg38_chroms_only.fa
+analysis_folder: /research_jude/rgs01_jude/groups/tsaigrp/projects/Genomics/common/projects/GUIDEseq/02172023_GUIDEseq2_GV_Novaseq/TRAC_site_1
+bwa: bwa
+bedtools: bedtools
+
+demultiplex:
+    min_reads: 10000
+    mismatch: 1
+    forward: 2549660_TRAC_site1_Pool6_S2_L002_R1_001.fastq.gz
+    reverse: 2549660_TRAC_site1_Pool6_S2_L002_R4_001.fastq.gz
+    index1: 2549660_TRAC_site1_Pool6_S2_L002_R2_001.fastq.gz
+    index2: 2549660_TRAC_site1_Pool6_S2_L002_R3_001.out.fq
+    controlforward: 2549655_Controls_Pool1_S1_L001_R1_001.fastq.gz
+    controlreverse: 2549655_Controls_Pool1_S1_L001_R4_001.fastq.gz
+    controlindex1: 2549655_Controls_Pool1_S1_L001_R2_001.fastq.gz
+    controlindex2: 2549655_Controls_Pool1_S1_L001_R3_001.out.fq
+    out_dir: demultiplexed # relative to analysis_folder
+    input_dir: ./ # relative to analysis_folder
+    subsample_reads: -1
+
+samples:
+    Donor_1_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: ATTCCGCT
+        barcode2: TAGATCGC
+        controlbarcode1: ATTCCGCT
+        controlbarcode2: TAGATCGC
+        description: Donor_1_TRAC_site_1
+        
+    Donor_2_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GCATGATC
+        barcode2: TAGATCGC
+        controlbarcode1: GCATGATC
+        controlbarcode2: TAGATCGC
+        description: Donor_2_TRAC_site_1
+        
+    Donor_3_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TCCGTCTT
+        barcode2: TAGATCGC
+        controlbarcode1: TCCGTCTT
+        controlbarcode2: TAGATCGC
+        description: Donor_3_TRAC_site_1
+        
+    Donor_4_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: AGGACTCG
+        barcode2: TAGATCGC
+        controlbarcode1: AGGACTCG
+        controlbarcode2: TAGATCGC
+        description: Donor_4_TRAC_site_1
+        
+    Donor_5_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CCTGAGGA
+        barcode2: TAGATCGC
+        controlbarcode1: CCTGAGGA
+        controlbarcode2: TAGATCGC
+        description: Donor_5_TRAC_site_1
+        
+    Donor_6_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: ATCCGTAC
+        barcode2: TAGATCGC
+        controlbarcode1: ATCCGTAC
+        controlbarcode2: TAGATCGC
+        description: Donor_6_TRAC_site_1
+        
+    Donor_7_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GAGAGATG
+        barcode2: TAGATCGC
+        controlbarcode1: GAGAGATG
+        controlbarcode2: TAGATCGC
+        description: Donor_7_TRAC_site_1
+         
+    Donor_8_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GCTCCGAC
+        barcode2: TAGATCGC
+        controlbarcode1: GCTCCGAC
+        controlbarcode2: TAGATCGC
+        description: Donor_8_TRAC_site_1
+        
+    Donor_9_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TTCTCCGT
+        barcode2: TAGATCGC
+        controlbarcode1: TTCTCCGT
+        controlbarcode2: TAGATCGC
+        description: Donor_9_TRAC_site_1
+        
+    Donor_10_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CATCTCCT
+        barcode2: TAGATCGC
+        controlbarcode1: CATCTCCT
+        controlbarcode2: TAGATCGC
+        description: Donor_10_TRAC_site_1
+        
+    Donor_11_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CGAGTACT
+        barcode2: TAGATCGC
+        controlbarcode1: CGAGTACT
+        controlbarcode2: TAGATCGC
+        description: Donor_11_TRAC_site_1
+        
+    Donor_12_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TAGAGTCC
+        barcode2: TAGATCGC
+        controlbarcode1: TAGAGTCC
+        controlbarcode2: TAGATCGC
+        description: Donor_12_TRAC_site_1
+        
+    Donor_13_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: ATTCCGCT
+        barcode2: CTCTCTAT
+        controlbarcode1: ATTCCGCT
+        controlbarcode2: CTCTCTAT
+        description: Donor_13_TRAC_site_1
+        
+    Donor_14_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GCATGATC
+        barcode2: CTCTCTAT
+        controlbarcode1: GCATGATC
+        controlbarcode2: CTCTCTAT
+        description: Donor_14_TRAC_site_1
+        
+    Donor_15_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TCCGTCTT
+        barcode2: CTCTCTAT
+        controlbarcode1: TCCGTCTT
+        controlbarcode2: CTCTCTAT
+        description: Donor_15_TRAC_site_1
+        
+    Donor_16_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: AGGACTCG
+        barcode2: CTCTCTAT
+        controlbarcode1: AGGACTCG
+        controlbarcode2: CTCTCTAT
+        description: Donor_16_TRAC_site_1
+        
+    Donor_17_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CCTGAGGA
+        barcode2: CTCTCTAT
+        controlbarcode1: CCTGAGGA
+        controlbarcode2: CTCTCTAT
+        description: Donor_17_TRAC_site_1
+        
+    Donor_18_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: ATCCGTAC
+        barcode2: CTCTCTAT
+        controlbarcode1: ATCCGTAC
+        controlbarcode2: CTCTCTAT
+        description: Donor_18_TRAC_site_1
+        
+    Donor_19_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GAGAGATG
+        barcode2: CTCTCTAT
+        controlbarcode1: GAGAGATG
+        controlbarcode2: CTCTCTAT
+        description: Donor_19_TRAC_site_1
+         
+    Donor_20_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GCTCCGAC
+        barcode2: CTCTCTAT
+        controlbarcode1: GCTCCGAC
+        controlbarcode2: CTCTCTAT
+        description: Donor_20_TRAC_site_1
+        
+    Donor_21_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TTCTCCGT
+        barcode2: CTCTCTAT
+        controlbarcode1: TTCTCCGT
+        controlbarcode2: CTCTCTAT
+        description: Donor_21_TRAC_site_1
+        
+    Donor_22_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CATCTCCT
+        barcode2: CTCTCTAT
+        controlbarcode1: CATCTCCT
+        controlbarcode2: CTCTCTAT
+        description: Donor_22_TRAC_site_1
+        
+    Donor_23_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CGAGTACT
+        barcode2: CTCTCTAT
+        controlbarcode1: CGAGTACT
+        controlbarcode2: CTCTCTAT
+        description: Donor_23_TRAC_site_1
+        
+    Donor_24_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TAGAGTCC
+        barcode2: CTCTCTAT
+        controlbarcode1: TAGAGTCC
+        controlbarcode2: CTCTCTAT
+        description: Donor_24_TRAC_site_1
+        
+    Donor_25_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: ATTCCGCT
+        barcode2: TATCCTCT
+        controlbarcode1: ATTCCGCT
+        controlbarcode2: TATCCTCT
+        description: Donor_25_TRAC_site_1
+        
+    Donor_26_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GCATGATC
+        barcode2: TATCCTCT
+        controlbarcode1: GCATGATC
+        controlbarcode2: TATCCTCT
+        description: Donor_26_TRAC_site_1
+        
+    Donor_27_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TCCGTCTT
+        barcode2: TATCCTCT
+        controlbarcode1: TCCGTCTT
+        controlbarcode2: TATCCTCT
+        description: Donor_27_TRAC_site_1
+        
+    Donor_28_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: AGGACTCG
+        barcode2: TATCCTCT
+        controlbarcode1: AGGACTCG
+        controlbarcode2: TATCCTCT
+        description: Donor_28_TRAC_site_1
+        
+    Donor_29_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CCTGAGGA
+        barcode2: TATCCTCT
+        controlbarcode1: CCTGAGGA
+        controlbarcode2: TATCCTCT
+        description: Donor_29_TRAC_site_1
+        
+    Donor_30_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: ATCCGTAC
+        barcode2: TATCCTCT
+        controlbarcode1: ATCCGTAC
+        controlbarcode2: TATCCTCT
+        description: Donor_30_TRAC_site_1
+        
+    Donor_31_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GAGAGATG
+        barcode2: TATCCTCT
+        controlbarcode1: GAGAGATG
+        controlbarcode2: TATCCTCT
+        description: Donor_31_TRAC_site_1
+         
+    Donor_32_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GCTCCGAC
+        barcode2: TATCCTCT
+        controlbarcode1: GCTCCGAC
+        controlbarcode2: TATCCTCT
+        description: Donor_32_TRAC_site_1
+        
+    Donor_33_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TTCTCCGT
+        barcode2: TATCCTCT
+        controlbarcode1: TTCTCCGT
+        controlbarcode2: TATCCTCT
+        description: Donor_33_TRAC_site_1
+        
+    Donor_34_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CATCTCCT
+        barcode2: TATCCTCT
+        controlbarcode1: CATCTCCT
+        controlbarcode2: TATCCTCT
+        description: Donor_34_TRAC_site_1
+        
+    Donor_35_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CGAGTACT
+        barcode2: TATCCTCT
+        controlbarcode1: CGAGTACT
+        controlbarcode2: TATCCTCT
+        description: Donor_35_TRAC_site_1
+        
+    Donor_36_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TAGAGTCC
+        barcode2: TATCCTCT
+        controlbarcode1: TAGAGTCC
+        controlbarcode2: TATCCTCT
+        description: Donor_36_TRAC_site_1
+        
+    Donor_37_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: ATTCCGCT
+        barcode2: AGAGTAGA
+        controlbarcode1: ATTCCGCT
+        controlbarcode2: AGAGTAGA
+        description: Donor_37_TRAC_site_1
+        
+    Donor_38_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GCATGATC
+        barcode2: AGAGTAGA
+        controlbarcode1: GCATGATC
+        controlbarcode2: AGAGTAGA
+        description: Donor_38_TRAC_site_1
+        
+    Donor_39_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TCCGTCTT
+        barcode2: AGAGTAGA
+        controlbarcode1: TCCGTCTT
+        controlbarcode2: AGAGTAGA
+        description: Donor_39_TRAC_site_1
+        
+    Donor_40_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: AGGACTCG
+        barcode2: AGAGTAGA
+        controlbarcode1: AGGACTCG
+        controlbarcode2: AGAGTAGA
+        description: Donor_40_TRAC_site_1
+        
+    Donor_41_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CCTGAGGA
+        barcode2: AGAGTAGA
+        controlbarcode1: CCTGAGGA
+        controlbarcode2: AGAGTAGA
+        description: Donor_41_TRAC_site_1
+        
+    Donor_42_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: ATCCGTAC
+        barcode2: AGAGTAGA
+        controlbarcode1: ATCCGTAC
+        controlbarcode2: AGAGTAGA
+        description: Donor_42_TRAC_site_1
+        
+    Donor_43_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GAGAGATG
+        barcode2: AGAGTAGA
+        controlbarcode1: GAGAGATG
+        controlbarcode2: AGAGTAGA
+        description: Donor_43_TRAC_site_1
+         
+    Donor_44_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GCTCCGAC
+        barcode2: AGAGTAGA
+        controlbarcode1: GCTCCGAC
+        controlbarcode2: AGAGTAGA
+        description: Donor_44_TRAC_site_1
+        
+    Donor_45_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TTCTCCGT
+        barcode2: AGAGTAGA
+        controlbarcode1: TTCTCCGT
+        controlbarcode2: AGAGTAGA
+        description: Donor_45_TRAC_site_1
+        
+    Donor_46_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CATCTCCT
+        barcode2: AGAGTAGA
+        controlbarcode1: CATCTCCT
+        controlbarcode2: AGAGTAGA
+        description: Donor_46_TRAC_site_1
+        
+    Donor_47_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CGAGTACT
+        barcode2: AGAGTAGA
+        controlbarcode1: CGAGTACT
+        controlbarcode2: AGAGTAGA
+        description: Donor_47_TRAC_site_1
+        
+    Donor_48_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TAGAGTCC
+        barcode2: AGAGTAGA
+        controlbarcode1: TAGAGTCC
+        controlbarcode2: AGAGTAGA
+        description: Donor_48_TRAC_site_1
+        
+    Donor_49_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: ATTCCGCT
+        barcode2: GTAAGGAG
+        controlbarcode1: ATTCCGCT
+        controlbarcode2: GTAAGGAG
+        description: Donor_49_TRAC_site_1
+        
+    Donor_50_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GCATGATC
+        barcode2: GTAAGGAG
+        controlbarcode1: GCATGATC
+        controlbarcode2: GTAAGGAG
+        description: Donor_50_TRAC_site_1
+        
+    Donor_51_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TCCGTCTT
+        barcode2: GTAAGGAG
+        controlbarcode1: TCCGTCTT
+        controlbarcode2: GTAAGGAG
+        description: Donor_51_TRAC_site_1
+        
+    Donor_52_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: AGGACTCG
+        barcode2: GTAAGGAG
+        controlbarcode1: AGGACTCG
+        controlbarcode2: GTAAGGAG
+        description: Donor_52_TRAC_site_1
+        
+    Donor_53_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CCTGAGGA
+        barcode2: GTAAGGAG
+        controlbarcode1: CCTGAGGA
+        controlbarcode2: GTAAGGAG
+        description: Donor_53_TRAC_site_1
+        
+    Donor_54_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: ATCCGTAC
+        barcode2: GTAAGGAG
+        controlbarcode1: ATCCGTAC
+        controlbarcode2: GTAAGGAG
+        description: Donor_54_TRAC_site_1
+        
+    Donor_55_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GAGAGATG
+        barcode2: GTAAGGAG
+        controlbarcode1: GAGAGATG
+        controlbarcode2: GTAAGGAG
+        description: Donor_55_TRAC_site_1
+         
+    Donor_56_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GCTCCGAC
+        barcode2: GTAAGGAG
+        controlbarcode1: GCTCCGAC
+        controlbarcode2: GTAAGGAG
+        description: Donor_56_TRAC_site_1
+        
+    Donor_57_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TTCTCCGT
+        barcode2: GTAAGGAG
+        controlbarcode1: TTCTCCGT
+        controlbarcode2: GTAAGGAG
+        description: Donor_57_TRAC_site_1
+        
+    Donor_58_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CATCTCCT
+        barcode2: GTAAGGAG
+        controlbarcode1: CATCTCCT
+        controlbarcode2: GTAAGGAG
+        description: Donor_58_TRAC_site_1
+        
+    Donor_59_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CGAGTACT
+        barcode2: GTAAGGAG
+        controlbarcode1: CGAGTACT
+        controlbarcode2: GTAAGGAG
+        description: Donor_59_TRAC_site_1
+        
+    Donor_60_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TAGAGTCC
+        barcode2: GTAAGGAG
+        controlbarcode1: TAGAGTCC
+        controlbarcode2: GTAAGGAG
+        description: Donor_60_TRAC_site_1
+        
+    Donor_61_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: ATTCCGCT
+        barcode2: ACTGCATA
+        controlbarcode1: ATTCCGCT
+        controlbarcode2: ACTGCATA
+        description: Donor_61_TRAC_site_1
+        
+    Donor_62_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GCATGATC
+        barcode2: ACTGCATA
+        controlbarcode1: GCATGATC
+        controlbarcode2: ACTGCATA
+        description: Donor_62_TRAC_site_1
+        
+    Donor_63_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TCCGTCTT
+        barcode2: ACTGCATA
+        controlbarcode1: TCCGTCTT
+        controlbarcode2: ACTGCATA
+        description: Donor_63_TRAC_site_1
+        
+    Donor_64_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: AGGACTCG
+        barcode2: ACTGCATA
+        controlbarcode1: AGGACTCG
+        controlbarcode2: ACTGCATA
+        description: Donor_64_TRAC_site_1
+        
+    Donor_65_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CCTGAGGA
+        barcode2: ACTGCATA
+        controlbarcode1: CCTGAGGA
+        controlbarcode2: ACTGCATA
+        description: Donor_65_TRAC_site_1
+        
+    Donor_66_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: ATCCGTAC
+        barcode2: ACTGCATA
+        controlbarcode1: ATCCGTAC
+        controlbarcode2: ACTGCATA
+        description: Donor_66_TRAC_site_1
+        
+    Donor_67_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GAGAGATG
+        barcode2: ACTGCATA
+        controlbarcode1: GAGAGATG
+        controlbarcode2: ACTGCATA
+        description: Donor_67_TRAC_site_1
+         
+    Donor_68_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GCTCCGAC
+        barcode2: ACTGCATA
+        controlbarcode1: GCTCCGAC
+        controlbarcode2: ACTGCATA
+        description: Donor_68_TRAC_site_1
+        
+    Donor_69_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TTCTCCGT
+        barcode2: ACTGCATA
+        controlbarcode1: TTCTCCGT
+        controlbarcode2: ACTGCATA
+        description: Donor_69_TRAC_site_1
+        
+    Donor_70_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CATCTCCT
+        barcode2: ACTGCATA
+        controlbarcode1: CATCTCCT
+        controlbarcode2: ACTGCATA
+        description: Donor_70_TRAC_site_1
+        
+    Donor_71_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CGAGTACT
+        barcode2: ACTGCATA
+        controlbarcode1: CGAGTACT
+        controlbarcode2: ACTGCATA
+        description: Donor_71_TRAC_site_1
+        
+    Donor_72_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TAGAGTCC
+        barcode2: ACTGCATA
+        controlbarcode1: TAGAGTCC
+        controlbarcode2: ACTGCATA
+        description: Donor_72_TRAC_site_1
+        
+    Donor_73_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: ATTCCGCT
+        barcode2: AAGGAGTA
+        controlbarcode1: ATTCCGCT
+        controlbarcode2: AAGGAGTA
+        description: Donor_73_TRAC_site_1
+        
+    Donor_74_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GCATGATC
+        barcode2: AAGGAGTA
+        controlbarcode1: GCATGATC
+        controlbarcode2: AAGGAGTA
+        description: Donor_74_TRAC_site_1
+        
+    Donor_75_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TCCGTCTT
+        barcode2: AAGGAGTA
+        controlbarcode1: TCCGTCTT
+        controlbarcode2: AAGGAGTA
+        description: Donor_75_TRAC_site_1
+        
+    Donor_76_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: AGGACTCG
+        barcode2: AAGGAGTA
+        controlbarcode1: AGGACTCG
+        controlbarcode2: AAGGAGTA
+        description: Donor_76_TRAC_site_1
+        
+    Donor_77_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CCTGAGGA
+        barcode2: AAGGAGTA
+        controlbarcode1: CCTGAGGA
+        controlbarcode2: AAGGAGTA
+        description: Donor_77_TRAC_site_1
+        
+    Donor_78_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: ATCCGTAC
+        barcode2: AAGGAGTA
+        controlbarcode1: ATCCGTAC
+        controlbarcode2: AAGGAGTA
+        description: Donor_78_TRAC_site_1
+        
+    Donor_79_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GAGAGATG
+        barcode2: AAGGAGTA
+        controlbarcode1: GAGAGATG
+        controlbarcode2: AAGGAGTA
+        description: Donor_79_TRAC_site_1
+         
+    Donor_80_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GCTCCGAC
+        barcode2: AAGGAGTA
+        controlbarcode1: GCTCCGAC
+        controlbarcode2: AAGGAGTA
+        description: Donor_80_TRAC_site_1
+        
+    Donor_81_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TTCTCCGT
+        barcode2: AAGGAGTA
+        controlbarcode1: TTCTCCGT
+        controlbarcode2: AAGGAGTA
+        description: Donor_81_TRAC_site_1
+        
+    Donor_82_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CATCTCCT
+        barcode2: AAGGAGTA
+        controlbarcode1: CATCTCCT
+        controlbarcode2: AAGGAGTA
+        description: Donor_82_TRAC_site_1
+        
+    Donor_83_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CGAGTACT
+        barcode2: AAGGAGTA
+        controlbarcode1: CGAGTACT
+        controlbarcode2: AAGGAGTA
+        description: Donor_83_TRAC_site_1
+        
+    Donor_84_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TAGAGTCC
+        barcode2: AAGGAGTA
+        controlbarcode1: TAGAGTCC
+        controlbarcode2: AAGGAGTA
+        description: Donor_84_TRAC_site_1
+        
+    Donor_85_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: ATTCCGCT
+        barcode2: CTAAGCCT
+        controlbarcode1: ATTCCGCT
+        controlbarcode2: CTAAGCCT
+        description: Donor_85_TRAC_site_1
+        
+    Donor_86_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GCATGATC
+        barcode2: CTAAGCCT
+        controlbarcode1: GCATGATC
+        controlbarcode2: CTAAGCCT
+        description: Donor_86_TRAC_site_1
+        
+    Donor_87_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TCCGTCTT
+        barcode2: CTAAGCCT
+        controlbarcode1: TCCGTCTT
+        controlbarcode2: CTAAGCCT
+        description: Donor_87_TRAC_site_1
+        
+    Donor_88_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: AGGACTCG
+        barcode2: CTAAGCCT
+        controlbarcode1: AGGACTCG
+        controlbarcode2: CTAAGCCT
+        description: Donor_88_TRAC_site_1
+        
+    Donor_89_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CCTGAGGA
+        barcode2: CTAAGCCT
+        controlbarcode1: CCTGAGGA
+        controlbarcode2: CTAAGCCT
+        description: Donor_89_TRAC_site_1
+        
+    Donor_90_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: ATCCGTAC
+        barcode2: CTAAGCCT
+        controlbarcode1: ATCCGTAC
+        controlbarcode2: CTAAGCCT
+        description: Donor_90_TRAC_site_1
+        
+    Donor_91_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GAGAGATG
+        barcode2: CTAAGCCT
+        controlbarcode1: GAGAGATG
+        controlbarcode2: CTAAGCCT
+        description: Donor_91_TRAC_site_1
+         
+    Donor_92_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: GCTCCGAC
+        barcode2: CTAAGCCT
+        controlbarcode1: GCTCCGAC
+        controlbarcode2: CTAAGCCT
+        description: Donor_92_TRAC_site_1
+        
+    Donor_93_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: TTCTCCGT
+        barcode2: CTAAGCCT
+        controlbarcode1: TTCTCCGT
+        controlbarcode2: CTAAGCCT
+        description: Donor_93_TRAC_site_1
+        
+    Donor_94_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CATCTCCT
+        barcode2: CTAAGCCT
+        controlbarcode1: CATCTCCT
+        controlbarcode2: CTAAGCCT
+        description: Donor_94_TRAC_site_1
+        
+    Donor_95_TRAC_site_1:
+        target: GTCAGGGTTCTGGATATCTGNGG
+        control_primer:
+        barcode1: CGAGTACT
+        barcode2: CTAAGCCT
+        controlbarcode1: CGAGTACT
+        controlbarcode2: CTAAGCCT
+        description: Donor_95_TRAC_site_1

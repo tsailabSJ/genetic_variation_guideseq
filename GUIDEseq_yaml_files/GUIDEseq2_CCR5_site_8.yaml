@@ -1,0 +1,875 @@
+reference_genome: /research_jude/rgs01_jude/groups/tsaigrp/projects/Genomics/common/genomes/hg38/hg38_chroms_only.fa
+analysis_folder: /research_jude/rgs01_jude/groups/tsaigrp/projects/Genomics/common/projects/GUIDEseq/02172023_GUIDEseq2_GV_Novaseq/CCR5_site_8
+bwa: bwa
+bedtools: bedtools
+
+demultiplex:
+    min_reads: 10000
+    mismatch: 1
+    forward: 2549659_CCR5_site8_Pool5_S1_L001_R1_001.fastq.gz
+    reverse: 2549659_CCR5_site8_Pool5_S1_L001_R4_001.fastq.gz
+    index1: 2549659_CCR5_site8_Pool5_S1_L001_R2_001.fastq.gz
+    index2: 2549659_CCR5_site8_Pool5_S1_L001_R3_001.out.fq
+    controlforward: 2549655_Controls_Pool1_S1_L001_R1_001.fastq.gz
+    controlreverse: 2549655_Controls_Pool1_S1_L001_R4_001.fastq.gz
+    controlindex1: 2549655_Controls_Pool1_S1_L001_R2_001.fastq.gz
+    controlindex2: 2549655_Controls_Pool1_S1_L001_R3_001.out.fq
+    out_dir: demultiplexed # relative to analysis_folder
+    input_dir: ./ # relative to analysis_folder
+    subsample_reads: -1
+
+samples:
+    Donor_1_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: ATTCCGCT
+        barcode2: TAGATCGC
+        controlbarcode1: ATTCCGCT
+        controlbarcode2: TAGATCGC
+        description: Donor_1_CCR5_site_8
+        
+    Donor_2_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GCATGATC
+        barcode2: TAGATCGC
+        controlbarcode1: GCATGATC
+        controlbarcode2: TAGATCGC
+        description: Donor_2_CCR5_site_8
+        
+    Donor_3_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TCCGTCTT
+        barcode2: TAGATCGC
+        controlbarcode1: TCCGTCTT
+        controlbarcode2: TAGATCGC
+        description: Donor_3_CCR5_site_8
+        
+    Donor_4_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: AGGACTCG
+        barcode2: TAGATCGC
+        controlbarcode1: AGGACTCG
+        controlbarcode2: TAGATCGC
+        description: Donor_4_CCR5_site_8
+        
+    Donor_5_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CCTGAGGA
+        barcode2: TAGATCGC
+        controlbarcode1: CCTGAGGA
+        controlbarcode2: TAGATCGC
+        description: Donor_5_CCR5_site_8
+        
+    Donor_6_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: ATCCGTAC
+        barcode2: TAGATCGC
+        controlbarcode1: ATCCGTAC
+        controlbarcode2: TAGATCGC
+        description: Donor_6_CCR5_site_8
+        
+    Donor_7_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GAGAGATG
+        barcode2: TAGATCGC
+        controlbarcode1: GAGAGATG
+        controlbarcode2: TAGATCGC
+        description: Donor_7_CCR5_site_8
+         
+    Donor_8_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GCTCCGAC
+        barcode2: TAGATCGC
+        controlbarcode1: GCTCCGAC
+        controlbarcode2: TAGATCGC
+        description: Donor_8_CCR5_site_8
+        
+    Donor_9_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TTCTCCGT
+        barcode2: TAGATCGC
+        controlbarcode1: TTCTCCGT
+        controlbarcode2: TAGATCGC
+        description: Donor_9_CCR5_site_8
+        
+    Donor_10_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CATCTCCT
+        barcode2: TAGATCGC
+        controlbarcode1: CATCTCCT
+        controlbarcode2: TAGATCGC
+        description: Donor_10_CCR5_site_8
+        
+    Donor_11_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CGAGTACT
+        barcode2: TAGATCGC
+        controlbarcode1: CGAGTACT
+        controlbarcode2: TAGATCGC
+        description: Donor_11_CCR5_site_8
+        
+    Donor_12_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TAGAGTCC
+        barcode2: TAGATCGC
+        controlbarcode1: TAGAGTCC
+        controlbarcode2: TAGATCGC
+        description: Donor_12_CCR5_site_8
+        
+    Donor_13_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: ATTCCGCT
+        barcode2: CTCTCTAT
+        controlbarcode1: ATTCCGCT
+        controlbarcode2: CTCTCTAT
+        description: Donor_13_CCR5_site_8
+        
+    Donor_14_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GCATGATC
+        barcode2: CTCTCTAT
+        controlbarcode1: GCATGATC
+        controlbarcode2: CTCTCTAT
+        description: Donor_14_CCR5_site_8
+        
+    Donor_15_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TCCGTCTT
+        barcode2: CTCTCTAT
+        controlbarcode1: TCCGTCTT
+        controlbarcode2: CTCTCTAT
+        description: Donor_15_CCR5_site_8
+        
+    Donor_16_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: AGGACTCG
+        barcode2: CTCTCTAT
+        controlbarcode1: AGGACTCG
+        controlbarcode2: CTCTCTAT
+        description: Donor_16_CCR5_site_8
+        
+    Donor_17_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CCTGAGGA
+        barcode2: CTCTCTAT
+        controlbarcode1: CCTGAGGA
+        controlbarcode2: CTCTCTAT
+        description: Donor_17_CCR5_site_8
+        
+    Donor_18_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: ATCCGTAC
+        barcode2: CTCTCTAT
+        controlbarcode1: ATCCGTAC
+        controlbarcode2: CTCTCTAT
+        description: Donor_18_CCR5_site_8
+        
+    Donor_19_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GAGAGATG
+        barcode2: CTCTCTAT
+        controlbarcode1: GAGAGATG
+        controlbarcode2: CTCTCTAT
+        description: Donor_19_CCR5_site_8
+         
+    Donor_20_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GCTCCGAC
+        barcode2: CTCTCTAT
+        controlbarcode1: GCTCCGAC
+        controlbarcode2: CTCTCTAT
+        description: Donor_20_CCR5_site_8
+        
+    Donor_21_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TTCTCCGT
+        barcode2: CTCTCTAT
+        controlbarcode1: TTCTCCGT
+        controlbarcode2: CTCTCTAT
+        description: Donor_21_CCR5_site_8
+        
+    Donor_22_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CATCTCCT
+        barcode2: CTCTCTAT
+        controlbarcode1: CATCTCCT
+        controlbarcode2: CTCTCTAT
+        description: Donor_22_CCR5_site_8
+        
+    Donor_23_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CGAGTACT
+        barcode2: CTCTCTAT
+        controlbarcode1: CGAGTACT
+        controlbarcode2: CTCTCTAT
+        description: Donor_23_CCR5_site_8
+        
+    Donor_24_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TAGAGTCC
+        barcode2: CTCTCTAT
+        controlbarcode1: TAGAGTCC
+        controlbarcode2: CTCTCTAT
+        description: Donor_24_CCR5_site_8
+        
+    Donor_25_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: ATTCCGCT
+        barcode2: TATCCTCT
+        controlbarcode1: ATTCCGCT
+        controlbarcode2: TATCCTCT
+        description: Donor_25_CCR5_site_8
+        
+    Donor_26_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GCATGATC
+        barcode2: TATCCTCT
+        controlbarcode1: GCATGATC
+        controlbarcode2: TATCCTCT
+        description: Donor_26_CCR5_site_8
+        
+    Donor_27_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TCCGTCTT
+        barcode2: TATCCTCT
+        controlbarcode1: TCCGTCTT
+        controlbarcode2: TATCCTCT
+        description: Donor_27_CCR5_site_8
+        
+    Donor_28_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: AGGACTCG
+        barcode2: TATCCTCT
+        controlbarcode1: AGGACTCG
+        controlbarcode2: TATCCTCT
+        description: Donor_28_CCR5_site_8
+        
+    Donor_29_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CCTGAGGA
+        barcode2: TATCCTCT
+        controlbarcode1: CCTGAGGA
+        controlbarcode2: TATCCTCT
+        description: Donor_29_CCR5_site_8
+        
+    Donor_30_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: ATCCGTAC
+        barcode2: TATCCTCT
+        controlbarcode1: ATCCGTAC
+        controlbarcode2: TATCCTCT
+        description: Donor_30_CCR5_site_8
+        
+    Donor_31_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GAGAGATG
+        barcode2: TATCCTCT
+        controlbarcode1: GAGAGATG
+        controlbarcode2: TATCCTCT
+        description: Donor_31_CCR5_site_8
+         
+    Donor_32_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GCTCCGAC
+        barcode2: TATCCTCT
+        controlbarcode1: GCTCCGAC
+        controlbarcode2: TATCCTCT
+        description: Donor_32_CCR5_site_8
+        
+    Donor_33_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TTCTCCGT
+        barcode2: TATCCTCT
+        controlbarcode1: TTCTCCGT
+        controlbarcode2: TATCCTCT
+        description: Donor_33_CCR5_site_8
+        
+    Donor_34_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CATCTCCT
+        barcode2: TATCCTCT
+        controlbarcode1: CATCTCCT
+        controlbarcode2: TATCCTCT
+        description: Donor_34_CCR5_site_8
+        
+    Donor_35_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CGAGTACT
+        barcode2: TATCCTCT
+        controlbarcode1: CGAGTACT
+        controlbarcode2: TATCCTCT
+        description: Donor_35_CCR5_site_8
+        
+    Donor_36_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TAGAGTCC
+        barcode2: TATCCTCT
+        controlbarcode1: TAGAGTCC
+        controlbarcode2: TATCCTCT
+        description: Donor_36_CCR5_site_8
+        
+    Donor_37_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: ATTCCGCT
+        barcode2: AGAGTAGA
+        controlbarcode1: ATTCCGCT
+        controlbarcode2: AGAGTAGA
+        description: Donor_37_CCR5_site_8
+        
+    Donor_38_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GCATGATC
+        barcode2: AGAGTAGA
+        controlbarcode1: GCATGATC
+        controlbarcode2: AGAGTAGA
+        description: Donor_38_CCR5_site_8
+        
+    Donor_39_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TCCGTCTT
+        barcode2: AGAGTAGA
+        controlbarcode1: TCCGTCTT
+        controlbarcode2: AGAGTAGA
+        description: Donor_39_CCR5_site_8
+        
+    Donor_40_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: AGGACTCG
+        barcode2: AGAGTAGA
+        controlbarcode1: AGGACTCG
+        controlbarcode2: AGAGTAGA
+        description: Donor_40_CCR5_site_8
+        
+    Donor_41_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CCTGAGGA
+        barcode2: AGAGTAGA
+        controlbarcode1: CCTGAGGA
+        controlbarcode2: AGAGTAGA
+        description: Donor_41_CCR5_site_8
+        
+    Donor_42_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: ATCCGTAC
+        barcode2: AGAGTAGA
+        controlbarcode1: ATCCGTAC
+        controlbarcode2: AGAGTAGA
+        description: Donor_42_CCR5_site_8
+        
+    Donor_43_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GAGAGATG
+        barcode2: AGAGTAGA
+        controlbarcode1: GAGAGATG
+        controlbarcode2: AGAGTAGA
+        description: Donor_43_CCR5_site_8
+         
+    Donor_44_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GCTCCGAC
+        barcode2: AGAGTAGA
+        controlbarcode1: GCTCCGAC
+        controlbarcode2: AGAGTAGA
+        description: Donor_44_CCR5_site_8
+        
+    Donor_45_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TTCTCCGT
+        barcode2: AGAGTAGA
+        controlbarcode1: TTCTCCGT
+        controlbarcode2: AGAGTAGA
+        description: Donor_45_CCR5_site_8
+        
+    Donor_46_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CATCTCCT
+        barcode2: AGAGTAGA
+        controlbarcode1: CATCTCCT
+        controlbarcode2: AGAGTAGA
+        description: Donor_46_CCR5_site_8
+        
+    Donor_47_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CGAGTACT
+        barcode2: AGAGTAGA
+        controlbarcode1: CGAGTACT
+        controlbarcode2: AGAGTAGA
+        description: Donor_47_CCR5_site_8
+        
+    Donor_48_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TAGAGTCC
+        barcode2: AGAGTAGA
+        controlbarcode1: TAGAGTCC
+        controlbarcode2: AGAGTAGA
+        description: Donor_48_CCR5_site_8
+        
+    Donor_49_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: ATTCCGCT
+        barcode2: GTAAGGAG
+        controlbarcode1: ATTCCGCT
+        controlbarcode2: GTAAGGAG
+        description: Donor_49_CCR5_site_8
+        
+    Donor_50_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GCATGATC
+        barcode2: GTAAGGAG
+        controlbarcode1: GCATGATC
+        controlbarcode2: GTAAGGAG
+        description: Donor_50_CCR5_site_8
+        
+    Donor_51_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TCCGTCTT
+        barcode2: GTAAGGAG
+        controlbarcode1: TCCGTCTT
+        controlbarcode2: GTAAGGAG
+        description: Donor_51_CCR5_site_8
+        
+    Donor_52_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: AGGACTCG
+        barcode2: GTAAGGAG
+        controlbarcode1: AGGACTCG
+        controlbarcode2: GTAAGGAG
+        description: Donor_52_CCR5_site_8
+        
+    Donor_53_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CCTGAGGA
+        barcode2: GTAAGGAG
+        controlbarcode1: CCTGAGGA
+        controlbarcode2: GTAAGGAG
+        description: Donor_53_CCR5_site_8
+        
+    Donor_54_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: ATCCGTAC
+        barcode2: GTAAGGAG
+        controlbarcode1: ATCCGTAC
+        controlbarcode2: GTAAGGAG
+        description: Donor_54_CCR5_site_8
+        
+    Donor_55_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GAGAGATG
+        barcode2: GTAAGGAG
+        controlbarcode1: GAGAGATG
+        controlbarcode2: GTAAGGAG
+        description: Donor_55_CCR5_site_8
+         
+    Donor_56_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GCTCCGAC
+        barcode2: GTAAGGAG
+        controlbarcode1: GCTCCGAC
+        controlbarcode2: GTAAGGAG
+        description: Donor_56_CCR5_site_8
+        
+    Donor_57_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TTCTCCGT
+        barcode2: GTAAGGAG
+        controlbarcode1: TTCTCCGT
+        controlbarcode2: GTAAGGAG
+        description: Donor_57_CCR5_site_8
+        
+    Donor_58_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CATCTCCT
+        barcode2: GTAAGGAG
+        controlbarcode1: CATCTCCT
+        controlbarcode2: GTAAGGAG
+        description: Donor_58_CCR5_site_8
+        
+    Donor_59_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CGAGTACT
+        barcode2: GTAAGGAG
+        controlbarcode1: CGAGTACT
+        controlbarcode2: GTAAGGAG
+        description: Donor_59_CCR5_site_8
+        
+    Donor_60_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TAGAGTCC
+        barcode2: GTAAGGAG
+        controlbarcode1: TAGAGTCC
+        controlbarcode2: GTAAGGAG
+        description: Donor_60_CCR5_site_8
+        
+    Donor_61_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: ATTCCGCT
+        barcode2: ACTGCATA
+        controlbarcode1: ATTCCGCT
+        controlbarcode2: ACTGCATA
+        description: Donor_61_CCR5_site_8
+        
+    Donor_62_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GCATGATC
+        barcode2: ACTGCATA
+        controlbarcode1: GCATGATC
+        controlbarcode2: ACTGCATA
+        description: Donor_62_CCR5_site_8
+        
+    Donor_63_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TCCGTCTT
+        barcode2: ACTGCATA
+        controlbarcode1: TCCGTCTT
+        controlbarcode2: ACTGCATA
+        description: Donor_63_CCR5_site_8
+        
+    Donor_64_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: AGGACTCG
+        barcode2: ACTGCATA
+        controlbarcode1: AGGACTCG
+        controlbarcode2: ACTGCATA
+        description: Donor_64_CCR5_site_8
+        
+    Donor_65_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CCTGAGGA
+        barcode2: ACTGCATA
+        controlbarcode1: CCTGAGGA
+        controlbarcode2: ACTGCATA
+        description: Donor_65_CCR5_site_8
+        
+    Donor_66_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: ATCCGTAC
+        barcode2: ACTGCATA
+        controlbarcode1: ATCCGTAC
+        controlbarcode2: ACTGCATA
+        description: Donor_66_CCR5_site_8
+        
+    Donor_67_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GAGAGATG
+        barcode2: ACTGCATA
+        controlbarcode1: GAGAGATG
+        controlbarcode2: ACTGCATA
+        description: Donor_67_CCR5_site_8
+         
+    Donor_68_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GCTCCGAC
+        barcode2: ACTGCATA
+        controlbarcode1: GCTCCGAC
+        controlbarcode2: ACTGCATA
+        description: Donor_68_CCR5_site_8
+        
+    Donor_69_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TTCTCCGT
+        barcode2: ACTGCATA
+        controlbarcode1: TTCTCCGT
+        controlbarcode2: ACTGCATA
+        description: Donor_69_CCR5_site_8
+        
+    Donor_70_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CATCTCCT
+        barcode2: ACTGCATA
+        controlbarcode1: CATCTCCT
+        controlbarcode2: ACTGCATA
+        description: Donor_70_CCR5_site_8
+        
+    Donor_71_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CGAGTACT
+        barcode2: ACTGCATA
+        controlbarcode1: CGAGTACT
+        controlbarcode2: ACTGCATA
+        description: Donor_71_CCR5_site_8
+        
+    Donor_72_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TAGAGTCC
+        barcode2: ACTGCATA
+        controlbarcode1: TAGAGTCC
+        controlbarcode2: ACTGCATA
+        description: Donor_72_CCR5_site_8
+        
+    Donor_73_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: ATTCCGCT
+        barcode2: AAGGAGTA
+        controlbarcode1: ATTCCGCT
+        controlbarcode2: AAGGAGTA
+        description: Donor_73_CCR5_site_8
+        
+    Donor_74_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GCATGATC
+        barcode2: AAGGAGTA
+        controlbarcode1: GCATGATC
+        controlbarcode2: AAGGAGTA
+        description: Donor_74_CCR5_site_8
+        
+    Donor_75_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TCCGTCTT
+        barcode2: AAGGAGTA
+        controlbarcode1: TCCGTCTT
+        controlbarcode2: AAGGAGTA
+        description: Donor_75_CCR5_site_8
+        
+    Donor_76_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: AGGACTCG
+        barcode2: AAGGAGTA
+        controlbarcode1: AGGACTCG
+        controlbarcode2: AAGGAGTA
+        description: Donor_76_CCR5_site_8
+        
+    Donor_77_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CCTGAGGA
+        barcode2: AAGGAGTA
+        controlbarcode1: CCTGAGGA
+        controlbarcode2: AAGGAGTA
+        description: Donor_77_CCR5_site_8
+        
+    Donor_78_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: ATCCGTAC
+        barcode2: AAGGAGTA
+        controlbarcode1: ATCCGTAC
+        controlbarcode2: AAGGAGTA
+        description: Donor_78_CCR5_site_8
+        
+    Donor_79_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GAGAGATG
+        barcode2: AAGGAGTA
+        controlbarcode1: GAGAGATG
+        controlbarcode2: AAGGAGTA
+        description: Donor_79_CCR5_site_8
+         
+    Donor_80_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GCTCCGAC
+        barcode2: AAGGAGTA
+        controlbarcode1: GCTCCGAC
+        controlbarcode2: AAGGAGTA
+        description: Donor_80_CCR5_site_8
+        
+    Donor_81_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TTCTCCGT
+        barcode2: AAGGAGTA
+        controlbarcode1: TTCTCCGT
+        controlbarcode2: AAGGAGTA
+        description: Donor_81_CCR5_site_8
+        
+    Donor_82_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CATCTCCT
+        barcode2: AAGGAGTA
+        controlbarcode1: CATCTCCT
+        controlbarcode2: AAGGAGTA
+        description: Donor_82_CCR5_site_8
+        
+    Donor_83_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CGAGTACT
+        barcode2: AAGGAGTA
+        controlbarcode1: CGAGTACT
+        controlbarcode2: AAGGAGTA
+        description: Donor_83_CCR5_site_8
+        
+    Donor_84_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TAGAGTCC
+        barcode2: AAGGAGTA
+        controlbarcode1: TAGAGTCC
+        controlbarcode2: AAGGAGTA
+        description: Donor_84_CCR5_site_8
+        
+    Donor_85_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: ATTCCGCT
+        barcode2: CTAAGCCT
+        controlbarcode1: ATTCCGCT
+        controlbarcode2: CTAAGCCT
+        description: Donor_85_CCR5_site_8
+        
+    Donor_86_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GCATGATC
+        barcode2: CTAAGCCT
+        controlbarcode1: GCATGATC
+        controlbarcode2: CTAAGCCT
+        description: Donor_86_CCR5_site_8
+        
+    Donor_87_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TCCGTCTT
+        barcode2: CTAAGCCT
+        controlbarcode1: TCCGTCTT
+        controlbarcode2: CTAAGCCT
+        description: Donor_87_CCR5_site_8
+        
+    Donor_88_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: AGGACTCG
+        barcode2: CTAAGCCT
+        controlbarcode1: AGGACTCG
+        controlbarcode2: CTAAGCCT
+        description: Donor_88_CCR5_site_8
+        
+    Donor_89_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CCTGAGGA
+        barcode2: CTAAGCCT
+        controlbarcode1: CCTGAGGA
+        controlbarcode2: CTAAGCCT
+        description: Donor_89_CCR5_site_8
+        
+    Donor_90_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: ATCCGTAC
+        barcode2: CTAAGCCT
+        controlbarcode1: ATCCGTAC
+        controlbarcode2: CTAAGCCT
+        description: Donor_90_CCR5_site_8
+        
+    Donor_91_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GAGAGATG
+        barcode2: CTAAGCCT
+        controlbarcode1: GAGAGATG
+        controlbarcode2: CTAAGCCT
+        description: Donor_91_CCR5_site_8
+         
+    Donor_92_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: GCTCCGAC
+        barcode2: CTAAGCCT
+        controlbarcode1: GCTCCGAC
+        controlbarcode2: CTAAGCCT
+        description: Donor_92_CCR5_site_8
+        
+    Donor_93_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: TTCTCCGT
+        barcode2: CTAAGCCT
+        controlbarcode1: TTCTCCGT
+        controlbarcode2: CTAAGCCT
+        description: Donor_93_CCR5_site_8
+        
+    Donor_94_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CATCTCCT
+        barcode2: CTAAGCCT
+        controlbarcode1: CATCTCCT
+        controlbarcode2: CTAAGCCT
+        description: Donor_94_CCR5_site_8
+        
+    Donor_95_CCR5_site_8:
+        target: GGACAGTAAGAAGGAAAAACNGG
+        control_primer:
+        barcode1: CGAGTACT
+        barcode2: CTAAGCCT
+        controlbarcode1: CGAGTACT
+        controlbarcode2: CTAAGCCT
+        description: Donor_95_CCR5_site_8
