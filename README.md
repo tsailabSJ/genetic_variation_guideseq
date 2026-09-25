@@ -8,5 +8,7 @@ All_supplemental_tables_260728_AF.xlsx: Supplementary Table 4 contains processed
 
 PLINK_analysis: code for genome-wide association analysis using PLINK2
 
+rhamp_dsODN_AI.ipynb: Allelic imbalance analysis
+
 CHANCE-seq and CHANGE-net see: https://github.com/tsailabSJ/chance-seq-analysis https://github.com/tsailabSJ/chancenet
 
